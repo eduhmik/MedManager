@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_medicine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="8dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <!--android:src="@drawable/profile_ex"!-->
+            <LinearLayout
+                android:layout_weight="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#353a3e" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:text="Description"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_not_taken"
+                    android:visibility="gone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="2dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_accent_circle"
+                    android:tint="@android:color/white"
+                    android:src="@drawable/ic_check_black_24dp" />
+                <ImageView
+                    android:id="@+id/iv_taken"
+                    android:layout_width="50dp"
+                    android:visibility="gone"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="2dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>

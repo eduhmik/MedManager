@@ -1,0 +1,221 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddMedicineFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="70dp"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="5dp"
+                    android:clickable="false"
+                    card_view:cardCornerRadius="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="50dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Confirm Medicine Details"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Name: "
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                            <TextView
+                                android:id="@+id/tv_Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Ailment: "
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                            <TextView
+                                android:id="@+id/tv_Ailment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ailment"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Description: "
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                            <TextView
+                                android:id="@+id/tv_Description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Description"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:padding="10dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Start Date: "
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                            <TextView
+                                android:id="@+id/tv_StartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Start Date"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="End Date: "
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                            <TextView
+                                android:id="@+id/tv_EndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="End Date"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_weight="1"
+                        android:id="@+id/btn_Edit"
+                        android:text="Edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/white"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        />
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_weight="1"
+                        android:id="@+id/btn_Confirm"
+                        android:text="Confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        />
+                </LinearLayout>
+                
+            </LinearLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:padding="2dp"
+                android:src="@drawable/png_logo"
+                android:tint="@android:color/white"
+                android:background="@drawable/bg_accent_circle"
+                android:elevation="6dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+

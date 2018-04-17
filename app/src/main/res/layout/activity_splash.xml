@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.SplashActivity">
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/png_med_manager"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/lin_Google"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/bg_white_text_border">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="7dp"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"
+            android:src="@drawable/png_google"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:text="Sign In With Google "
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+</FrameLayout>
