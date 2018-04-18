@@ -270,7 +270,7 @@
                                     android:id="@+id/tv_endTime"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Start Time"
+                                    android:text="End Time"
                                     android:maxLines="1"
                                     android:padding="10dp"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />

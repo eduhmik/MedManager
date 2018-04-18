@@ -19,7 +19,6 @@ import com.example.eduh_mik.med_manager.interfaces.OnFragmentInteractionListener
 import com.example.eduh_mik.med_manager.models.Dose;
 import com.example.eduh_mik.med_manager.models.Medicine;
 import com.example.eduh_mik.med_manager.models.Monthly;
-import com.google.gson.Gson;
 
 import org.joda.time.DateTime;
 import org.joda.time.Hours;
@@ -29,7 +28,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
-import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -104,6 +102,7 @@ public class ActivityFragment extends Fragment {
         splitDoseItems(doseItems);
     }
     public void splitDoseItems(ArrayList<Dose> doseItems){
+        if (doseItems.size()==0) return;
         DateTime start = new DateTime(doseItems.get(0).doseTime);
         DateTime end = new DateTime(doseItems.get(doseItems.size()-1).doseTime);
         Months months = Months.monthsBetween(start,end);
@@ -111,7 +110,7 @@ public class ActivityFragment extends Fragment {
         Log.e("Months",String.valueOf(numMonths));
         if(numMonths == 0){
             DateTime dt = start;
-            Monthly monthly = new Monthly(new SimpleDateFormat("MMMM").format(dt.toDate())+" - "+new SimpleDateFormat("YYYY").format(dt.toDate()));
+            Monthly monthly = new Monthly(new SimpleDateFormat("MMMM").format(dt.toDate())+" - "+new SimpleDateFormat("yy").format(dt.toDate()));
             for(Dose dose : doseItems){
                 monthly.add(dose);
             }
@@ -119,7 +118,7 @@ public class ActivityFragment extends Fragment {
         }else{
             for(int i=0;i<=numMonths;i++){
                 DateTime dt = start.plusMonths(i);
-                Monthly monthly = new Monthly(new SimpleDateFormat("MMMM").format(dt.toDate())+" - "+new SimpleDateFormat("YYYY").format(dt.toDate()));
+                Monthly monthly = new Monthly(new SimpleDateFormat("MMMM").format(dt.toDate())+" - "+new SimpleDateFormat("yy ").format(dt.toDate()));
                 for(Dose dose : doseItems){
                     Calendar cal1 = Calendar.getInstance();
                     Calendar cal2 = Calendar.getInstance();

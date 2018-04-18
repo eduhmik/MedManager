@@ -206,6 +206,7 @@ public class RegisterActivity extends BaseActivity implements GoogleApiClient.On
         Log.e(TAG, "handleSignInResult:" + result.isSuccess()+":"+result.getStatus().toString());
         if (result.isSuccess()) {
             GoogleSignInAccount acct = result.getSignInAccount();
+            Log.e("",acct.getEmail());
             etEmail.setText(acct.getEmail());
             etFirstName.setText(acct.getGivenName());
             etLastName.setText(acct.getFamilyName());
