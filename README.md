@@ -18,6 +18,6 @@ To run this application you'll need:
 
 The users can sign in to the application through Google social authentication that let's them pick up their Google accounts and proceeding with signup
 
-<img src="https://github.com/eduhmik/MedManager/Screenshots/Screenshot_2018-04-17-21-20-45-14.png"  width="280"/>   <img src="https://github.com/eduhmik/MedManager/master/screenshots/Screenshot_2018-04-17-21-22-30-78.png
+<img src="MedManager/Screenshots/Screenshot_2018-04-17-21-20-45-14.png"  width="280"/>   <img src="https://github.com/eduhmik/MedManager/master/screenshots/Screenshot_2018-04-17-21-22-30-78.png
 " width="280"/><img src="https://github.com/eduhmik/MedManager/master/screenshots/Screenshot_2018-04-17-22-07-59-75.png
                " width="280"/> ````
