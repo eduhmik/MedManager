@@ -1,1 +1,1 @@
-# MedManager 
+# MedManager  [![CircleCI](https://circleci.com/gh/eduhmik/MedManager.svg?style=shield)](https://circleci.com/gh/eduhmik/MedManager)
