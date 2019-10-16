@@ -76,6 +76,7 @@ public class AddMedicineFragment extends BaseFragment {
                 if (checked) interval = 4;
                 break;
             default:
+                rgFrequency.removeAllViews();
                 break;
         }
     }

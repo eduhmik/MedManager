@@ -1,170 +1,195 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.AddMedicineFragment">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:orientation="vertical"
                 android:layout_marginTop="70dp"
-                android:layout_height="match_parent">
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:elevation="5dp"
                     android:clickable="false"
+                    android:elevation="5dp"
                     card_view:cardCornerRadius="0dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
-                        android:paddingBottom="5dp"
                         android:paddingTop="50dp"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Add Medicine Details"
-                            android:layout_margin="10dp"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="50dp"
-                                android:layout_height="match_parent"
-                                android:paddingTop="10dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:tint="@color/colorAccent"
-                                android:src="@drawable/png_logo"/>
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp">
-                                <EditText
-                                    android:id="@+id/et_Name"
-                                    android:padding="10dp"
-                                    android:hint="Name"
-                                    android:maxLines="1"
-                                    android:inputType="text"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content" />
-                            </android.support.design.widget.TextInputLayout>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="50dp"
-                                android:layout_height="match_parent"
-                                android:paddingTop="10dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:tint="@color/colorAccent"
-                                android:src="@drawable/png_logo"/>
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp">
-                                <EditText
-                                    android:id="@+id/et_Description"
-                                    android:padding="10dp"
-                                    android:hint="Description"
-                                    android:maxLines="1"
-                                    android:inputType="text"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content" />
-                            </android.support.design.widget.TextInputLayout>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="50dp"
-                                android:layout_height="match_parent"
-                                android:paddingTop="10dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:tint="@color/colorAccent"
-                                android:src="@drawable/png_logo"/>
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp">
-                                <EditText
-                                    android:id="@+id/et_Ailment"
-                                    android:padding="10dp"
-                                    android:hint="Ailment"
-                                    android:maxLines="1"
-                                    android:inputType="text"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content" />
-                            </android.support.design.widget.TextInputLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:elevation="5dp"
-                    android:clickable="false"
-                    card_view:cardCornerRadius="0dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="vertical"
-                        android:paddingLeft="5dp"
                         android:paddingRight="5dp"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="5dp"
-                        android:layout_height="wrap_content">
+                        android:paddingBottom="5dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Add Intake Details"
                             android:layout_margin="10dp"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                            android:text="Add Medicine Details"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="bold" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/png_logo"
+                                android:tint="@color/colorAccent" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
+                                <EditText
+                                    android:id="@+id/et_Name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Name"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="10dp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/png_logo"
+                                android:tint="@color/colorAccent" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
+                                <EditText
+                                    android:id="@+id/et_Description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Description"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="10dp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/png_logo"
+                                android:tint="@color/colorAccent" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
+                                <EditText
+                                    android:id="@+id/et_Ailment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Ailment"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="10dp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="false"
+                    android:elevation="5dp"
+                    card_view:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:text="Add Intake Details"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <LinearLayout
                                 android:id="@+id/lin_StartDate"
-                                android:layout_weight="1"
                                 android:layout_width="match_parent"
-                                android:orientation="horizontal"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
                                 <ImageView
-                                    android:layout_gravity="center"
                                     android:layout_width="50dp"
                                     android:layout_height="match_parent"
+                                    android:layout_gravity="center"
                                     android:padding="10dp"
-                                    android:tint="@color/colorAccent"
-                                    android:src="@drawable/ic_date_range_black_24dp"/>
+                                    android:src="@drawable/ic_date_range_black_24dp"
+                                    android:tint="@color/colorAccent" />
+
                                 <android.support.design.widget.TextInputLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -174,25 +199,28 @@
                                         android:id="@+id/tv_StartDate"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Start Date"
                                         android:maxLines="1"
                                         android:padding="10dp"
+                                        android:text="Start Date"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
                                 </android.support.design.widget.TextInputLayout>
                             </LinearLayout>
+
                             <LinearLayout
                                 android:id="@+id/lin_StartTime"
-                                android:layout_weight="1"
                                 android:layout_width="match_parent"
-                                android:orientation="horizontal"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
                                 <ImageView
-                                    android:layout_gravity="center"
                                     android:layout_width="50dp"
                                     android:layout_height="match_parent"
+                                    android:layout_gravity="center"
                                     android:padding="10dp"
-                                    android:tint="@color/colorAccent"
-                                    android:src="@drawable/ic_access_time_black_24dp"/>
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    android:tint="@color/colorAccent" />
+
                                 <android.support.design.widget.TextInputLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -202,185 +230,185 @@
                                         android:id="@+id/tv_StartTime"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Start Time"
                                         android:maxLines="1"
                                         android:padding="10dp"
+                                        android:text="Start Time"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
                                 </android.support.design.widget.TextInputLayout>
                             </LinearLayout>
 
                         </LinearLayout>
+
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
                             android:layout_gravity="center"
-                            android:background="#ebebeb"
                             android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp" />
+                            android:layout_marginRight="5dp"
+                            android:background="#ebebeb" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
-                        <LinearLayout
-                            android:layout_weight="1"
-                            android:id="@+id/lin_EndDate"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="50dp"
-                                android:layout_height="match_parent"
-                                android:padding="10dp"
-                                android:tint="@color/colorAccent"
-                                android:src="@drawable/ic_date_range_black_24dp"/>
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp">
-                                <TextView
-                                    android:id="@+id/tv_EndDate"
-                                    android:padding="10dp"
-                                    android:text="End Date"
-                                    android:maxLines="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-                            </android.support.design.widget.TextInputLayout>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_weight="1"
-                            android:id="@+id/lin_endTime"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="50dp"
-                                android:layout_height="match_parent"
-                                android:padding="10dp"
-                                android:tint="@color/colorAccent"
-                                android:src="@drawable/ic_access_time_black_24dp"/>
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp">
 
-                                <TextView
-                                    android:id="@+id/tv_endTime"
+                            <LinearLayout
+                                android:id="@+id/lin_EndDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:src="@drawable/ic_date_range_black_24dp"
+                                    android:tint="@color/colorAccent" />
+
+                                <android.support.design.widget.TextInputLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="End Time"
-                                    android:maxLines="1"
+                                    android:layout_margin="8dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_EndDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:padding="10dp"
+                                        android:text="End Date"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_endTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
                                     android:padding="10dp"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-                            </android.support.design.widget.TextInputLayout>
-                        </LinearLayout>
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    android:tint="@color/colorAccent" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_endTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:padding="10dp"
+                                        android:text="End Time"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
-                    android:layout_below="@+id/info_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/info_1"
                     android:layout_margin="5dp"
-                    android:elevation="5dp"
                     android:clickable="false"
+                    android:elevation="5dp"
                     card_view:cardCornerRadius="0dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
-                        android:paddingBottom="5dp"
                         android:paddingTop="5dp"
-                        android:layout_height="wrap_content">
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Add Frequency"
                             android:layout_margin="10dp"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                            android:text="Add Frequency"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="bold" />
+
                         <RadioGroup
                             android:id="@+id/rg_frequency"
-                            android:orientation="horizontal"
-                            android:checkedButton="@+id/rb_once"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:checkedButton="@id/rb_once"
+                            android:orientation="horizontal"
                             android:padding="10dp">
-                            <LinearLayout
+
+
+                            <RadioButton
+                                android:id="@+id/rb_once"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-                                    <RadioButton
-                                        android:id="@+id/rb_once"
-                                        android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Once a day" />
+                                android:layout_weight="1"
+                                android:text="Once a day" />
 
-                                    <RadioButton
-                                        android:id="@+id/rb_twice"
-                                        android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Twice a day" />
+                            <RadioButton
+                                android:id="@+id/rb_twice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Twice a day" />
 
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:orientation="horizontal">
-                                    <RadioButton
-                                        android:id="@+id/rb_thrice"
-                                        android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Thrice a day" />
+                            <RadioButton
+                                android:id="@+id/rb_thrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Thrice a day" />
 
-                                    <RadioButton
-                                        android:id="@+id/rb_four_times"
-                                        android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="4 times a day" />
+                            <RadioButton
+                                android:id="@+id/rb_four_times"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="4 times a day" />
 
-                                </LinearLayout>
 
-                            </LinearLayout>
                         </RadioGroup>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/btn_Submit"
-                    android:text="Submit"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="20dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:textColor="@android:color/white"
-                    style="@style/AppTheme.RoundedCornerMaterialButton"
-                    />
+                    android:text="Submit"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
-                android:scaleType="centerCrop"
                 android:layout_marginTop="16dp"
-                android:padding="2dp"
-                android:src="@drawable/png_logo"
-                android:tint="@android:color/white"
                 android:background="@drawable/bg_accent_circle"
-                android:elevation="6dp"/>
+                android:elevation="6dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/png_logo"
+                android:tint="@android:color/white" />
         </RelativeLayout>
     </ScrollView>
 </FrameLayout>
