@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatButton;
@@ -86,7 +87,7 @@ public class RegisterActivity extends BaseActivity implements GoogleApiClient.On
             public void run() {
                 _sweetAlertDialog.dismissWithAnimation();
                 sharedPrefs.setIsloggedIn(true);
-                showSweetDialog("Register","Account Created Succesfully", SweetAlertDialog.SUCCESS_TYPE, "Got It!",new SweetAlertDialog.OnSweetClickListener() {
+                showSweetDialog("Register","Account Created Successfully", SweetAlertDialog.SUCCESS_TYPE, "Got It!",new SweetAlertDialog.OnSweetClickListener() {
                     @Override
                     public void onClick(SweetAlertDialog sweetAlertDialog) {
                         sweetAlertDialog.dismissWithAnimation();
@@ -181,6 +182,7 @@ public class RegisterActivity extends BaseActivity implements GoogleApiClient.On
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         Log.e("Contacts","Register Fragment"+requestCode);
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == OUR_REQUEST_CODE) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             handleSignInResult(result);
@@ -194,9 +196,10 @@ public class RegisterActivity extends BaseActivity implements GoogleApiClient.On
             handleSignInResult(result);
         } else {
             Log.d(TAG, "No cached sign-in");
+            showProgressDialog("Signing in");
             opr.setResultCallback(new ResultCallback<GoogleSignInResult>() {
                 @Override
-                public void onResult(GoogleSignInResult googleSignInResult) {
+                public void onResult(@NonNull GoogleSignInResult googleSignInResult) {
                     handleSignInResult(googleSignInResult);
                 }
             });
